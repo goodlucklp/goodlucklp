@@ -1,0 +1,464 @@
+    1  su
+    2  sudo su
+    3  ps 
+    4  ps -ef 
+    5  who
+    6  ifconfig
+    7  cd /home/
+    8  ll
+    9  cd liupeng/
+   10  ll
+   11  find -depth -name redmine
+   12  ll
+   13  ifconfig
+   14  ll
+   15  ifconfig
+   16  ping 192.168.0.104
+   17  ifconfig
+   18  ping 192.168.0.104
+   19  route
+   20  ll
+   21  ifconfig
+   22  /etc/init.d/networking restart
+   23  ifconfig
+   24  ping 192.168.0.104~
+   25  ping 192.168.0.104
+   26  ifconfig
+   27  /etc/init.d/networking restart
+   28  ifconfig
+   29  reboot
+   30  ifconfig
+   31  ping 192.168.0.104
+   32  cd /mnt/
+   33  ll
+   34  cd /etc/
+   35  ll
+   36  cd samba/
+   37  ll
+   38  vim smb.conf 
+   39  ll
+   40  ifconfig
+   41  ping 192.168.0.104
+   42  ll
+   43  ps -x
+   44  top
+   45  ll
+   46  cd !
+   47  cd ~
+   48  ll
+   49  cd /home/
+   50  ll
+   51  cd liupeng/
+   52  ll
+   53  cd Downloads/
+   54  ll
+   55  cd teat/
+   56  ll
+   57  cd ..
+   58  cd ~
+   59  ll
+   60  pwd
+   61  mkdir forc
+   62  cd forc/
+   63  ll
+   64  vim test.cpp
+   65  g++ test.cpp 
+   66  g++ -std=c++11 test.cpp 
+   67  gcc -v
+   68  apt install gcc-4.8
+   69  rm /var/lib/dpkg/lock
+   70  sudo rm /var/lib/dpkg/lock
+   71  passwd
+   72  su
+   73  passwd
+   74  uname
+   75  ll
+   76  gcc -v
+   77  g++ -std=c++11 test.cpp 
+   78  ll
+   79  ./a.out 
+   80  ll
+   81  vim test.cpp 
+   82  gcc test.cpp 
+   83  vim test.cpp 
+   84  gcc test.cpp 
+   85  vim test.cpp 
+   86  gcc test.cpp 
+   87  gcc -std=c++11 test.cpp 
+   88  g++ -std=c++11 test.cpp 
+   89  g++ test.cpp 
+   90  ./a.out 
+   91  vim test.cpp 
+   92  g++ test.cpp 
+   93  ./a.out 
+   94  passwd
+   95  g++ test.cpp 
+   96  ./a.out 
+   97  vim test.cpp 
+   98  g++ test.cpp 
+   99  vim test.cpp 
+  100  g++ test.cpp 
+  101  ./a.out 
+  102  vim test.cpp 
+  103  g++ test.cpp 
+  104  vim test.cpp 
+  105  g++ test.cpp 
+  106  ./a.out 
+  107  man signal
+  108  ll
+  109  cd forc/
+  110  ll
+  111  size a.out 
+  112  ll
+  113  list
+  114  top
+  115  ll
+  116  vim test.cpp 
+  117  ll
+  118  vim test.cpp 
+  119  g++ test.cpp 
+  120  vim test.cpp 
+  121  g++ test.cpp 
+  122  ./a.out 
+  123  ll
+  124  cd /sbin/
+  125  ll
+  126  nm init
+  127  ls -l
+  128  ls -l | grep init
+  129  cd /lib/systemd/
+  130  ll
+  131  nm systemd
+  132  cd ..
+  133  ll
+  134  cd ..
+  135  ll
+  136  cd var/
+  137  ll
+  138  cd log/
+  139  ll
+  140  cd /
+  141  ll
+  142  cd /
+  143  ll
+  144  cd usr/include/
+  145  ll
+  146  grep getrlimit
+  147  man grep 
+  148  ll
+  149  grep 'getrlimit'
+  150  grep "getrlimit" .
+  151  grep .  "getrlimit" 
+  152  grep . -r   "getrlimit" 
+  153  grep . -r   "c" 
+  154  cd .. 
+  155  grep . -r   "c" include/
+  156  grep . -r   "c" include/ -include *.h
+  157  grep . -r   "c" include/ --include *.h
+  158  grep . -r   "setrlimit" include/ --include *.h
+  159  grep "setrlimit" include/ --include *.h
+  160  grep "setrlimit" include/
+  161  grep "setrlimit" -R
+  162  grep "setrlimit" -R --include *.h
+  163  cd ~
+  164  ll
+  165  cd forc/
+  166  ll
+  167  vim test.cpp 
+  168  g++ test.cpp -o lptest
+  169  vim test.cpp 
+  170  g++ test.cpp -o lptest
+  171  vim test.cpp 
+  172  g++ test.cpp -o lptest
+  173  gcc test.cpp -o lptest
+  174  g++ test.cpp -o lptest
+  175  vim test.cpp 
+  176  g++ test.cpp -o lptest
+  177  vim test.cpp 
+  178  g++ test.cpp -o lptest
+  179  ./lptest 
+  180  ps -afx | grep lptest
+  181  pstree -afx | grep lptest
+  182  pstree  | grep lptest
+  183  pstrer
+  184  pstree
+  185  top 
+  186  top | grep "lptest"
+  187  top
+  188  ps | grep "lptest"
+  189  ps -aux | grep "lptest"
+  190  time lptest
+  191  time ./lptest
+  192  vim test.cpp 
+  193  g++ test.cpp -o lptest
+  194  vim test.cpp 
+  195  g++ test.cpp -o lptest
+  196  ./lptest 
+  197  cd /var/
+  198  ll
+  199  cd log/
+  200  ll
+  201  find -name "syslog"
+  202  su
+  203  sudo find / -r -name "syslog"
+  204  sudo find / -R -name "syslog"
+  205  sudo find / -name "syslog"
+  206  tail /var/log/syslog
+  207  ll
+  208  cd ~/forc/
+  209  free
+  210  vim test_singal.cpp
+  211  g++ test_singal.cpp 
+  212  man sleep
+  213  man7 sleep
+  214  man3 sleep
+  215  man 3 sleep
+  216  man 7 sleep
+  217  man 3 sleep
+  218  vim test_singal.cpp 
+  219  g++ test_singal.cpp 
+  220  vim test_singal.cpp 
+  221  g++ test_singal.cpp 
+  222  man 3 signal
+  223  man signal
+  224  vim test_singal.cpp 
+  225  g++ test_singal.cpp 
+  226  ll
+  227  vim test_singal.cpp 
+  228  g++ test_singal.cpp 
+  229  vim test_singal.cpp 
+  230  g++ test_singal.cpp 
+  231  vim test_singal.cpp 
+  232  g++ test_singal.cpp 
+  233  vim test_singal.cpp 
+  234  g++ test_singal.cpp 
+  235  vim test_singal.cpp 
+  236  g++ test_singal.cpp 
+  237  vim test_singal.cpp 
+  238  g++ test_singal.cpp 
+  239  vim test_singal.cpp 
+  240  g++ test_singal.cpp 
+  241  vim test_singal.cpp 
+  242  g++ test_singal.cpp 
+  243  ./a.out 
+  244  ll
+  245  more test_singal.cpp 
+  246  ll
+  247  nm a.out 
+  248  size a.out 
+  249  ll
+  250  rm a.out lptest 
+  251  ll
+  252  g++ test_singal.cpp -o test_signal
+  253  nm test_signal 
+  254  ll
+  255  g++ test_singal.cpp -g -o test_signal
+  256  gdb ./test_signal 
+  257  ipcs --q
+  258  ipcs -q
+  259  ipcs -m
+  260  ipcs -s
+  261  ipcs -q
+  262  ipcs
+  263  init 0
+  264  ps -x | grep a.out
+  265  pstree
+  266  ll
+  267  cd forc/
+  268  ll
+  269  vim test.cpp test_singal.cpp 
+  270  ll
+  271  vim test.cpp test_signal 
+  272  vim test.cpp  test_signal.cpp
+  273  ll
+  274  vim test_signal.cpp
+  275  ll
+  276  more test_signal.cpp
+  277  ll
+  278  more test.cpp 
+  279  ll
+  280  vim test_singal.cpp 
+  281  ll
+  282  cd /usr/include/
+  283  ll
+  284  find -name signal.h | grep signal
+  285  vim -M signal.h 
+  286  cd ~/forc/
+  287  ll
+  288  mv test_singal.cpp test_signal.cpp
+  289  ll
+  290  vim test_signal.cpp 
+  291  g++ test_signal.cpp 
+  292  vim test_signal.cpp 
+  293  g++ test_signal.cpp 
+  294  ./a.out 
+  295  ll
+  296  cd fi
+  297  cd forc/
+  298  kk
+  299  ll
+  300  vim test_signal.cpp 
+  301  g++ test_signal.cpp 
+  302  vim test_signal.cpp 
+  303  g++ test_signal.cpp 
+  304  ./a.out 
+  305  vim test_signal.cpp 
+  306  ./a.out 
+  307  ll
+  308  man 3 kill
+  309  man 7 kill
+  310  man kill
+  311  man 2 kill
+  312  man kill
+  313  kill -L
+  314  man kill
+  315  man alarm
+  316  cd /usr/include/
+  317  ll
+  318  find -name setjump.h
+  319  find -name *.h | grep setjump
+  320  find -r -name *.h | grep setjump
+  321  find . -R -name *.h | grep setjump
+  322  find . -name *.h | grep setjump
+  323  find . -name "*.h" | grep setjump
+  324  find -name "*.h"
+  325  find -name "*.h" | grep "setjump"
+  326  find -name "*.h" | grep  par
+  327  find -name "*.h" | grep  setjump
+  328  find -name "*.h" | grep  -n setjump
+  329  find -name "*.h" | grep  -n par
+  330  find -name "*.h" | grep  -n socket
+  331  find -name "*.h" | grep  -n setjmp
+  332  more setjmp.h 
+  333  ls | more
+  334  man pipe
+  335  man popen
+  336  more stdio.h
+  337  grep popen
+  338  find *.h | grep popen
+  339  find *.h
+  340  find *.h -R 
+  341  find *.h -D
+  342  find *.h -depth
+  343  find *.h -depth | grep popen
+  344  find *.h -d | grep popen
+  345  find *.h -depth | grep popen
+  346  find *.h -depth 
+  347  grep popen --include stdio.h
+  348  grep . -R popen
+  349  grep . popen
+  350  find *.h | grep popne
+  351  find *.h | grep ls
+  352  find 
+  353  find *.h | grep write
+  354  find *.h | grep std
+  355  grep popen --inlcude *.h
+  356  grep popen --inlcude "*.h"
+  357  man grep 
+  358  more *.h | grep popen
+  359  more *.h | grep -n popen
+  360  more *.h | grep -n -p  popen
+  361  more *.h | grep -n -f  popen
+  362  more *.h | grep -i popen
+  363  more *.h | grep popen
+  364  man grep
+  365  grep -f *.h 
+  366  grep -f *.h [popen]
+  367  grep -f *.h popen
+  368  grep -f *.h [^popen]
+  369  grep -f *.h 
+  370  grep -f stdio.h popen
+  371  grep popen
+  372  grep popen -r *.h
+  373  grep popen -r -n *.h
+  374  grep popen -r -n -c *.h
+  375  grep popen -r -n -f *.h
+  376  grep popen -r -n -f<d>  *.h
+  377  grep popen -r -n  *.h
+  378  cd ~/forc/
+  379  ll
+  380  test_pipe.cpp
+  381  touch test_pipe.cpp
+  382  ll
+  383  vim test_pipe.cpp 
+  384  g++ test_pipe.cpp 
+  385  vim test_pipe.cpp 
+  386  man exit
+  387  vim test_pipe.cpp 
+  388  g++ test_pipe.cpp 
+  389  vim test_pipe.cpp 
+  390  g++ test_pipe.cpp 
+  391  ./a.out 
+  392  vim test_pipe.cpp 
+  393  man popen 
+  394  man exit
+  395  man _exit
+  396  man exit
+  397  man mknod
+  398  man 2 mknod
+  399  man 2 umask
+  400  ll
+  401  cd forc/
+  402  ll
+  403  vim test_sharelib.cpp
+  404  vim test_sharelib.hpp
+  405  vim test_sharelib.cpp 
+  406  g++ -fIPC -shared test_sharelib.cpp -o libhello.so
+  407  g++ -fPIC -shared test_sharelib.cpp -o libhello.so
+  408  ll
+  409  vim test_main.cpp
+  410  more test_sharelib.cpp 
+  411  more test_sharelib.hpp 
+  412  cp libhello.so /usr/lib
+  413  sudo cp libhello.so /usr/lib
+  414  ll
+  415  g++ test_main.cpp -L. -lhello -o main 
+  416  vim test_main.cpp 
+  417  g++ test_main.cpp -L. -lhello -o main 
+  418  ./main 
+  419  ll
+  420  test_static.cpp
+  421  vim test_static.cpp
+  422  vim test_static.hpp
+  423  vim test_mainstaic.cpp
+  424  more test_static.hpp
+  425  more test_static.cpp
+  426  vim test_static.cpp 
+  427  more test_static.hpp 
+  428  g++ test_static.cpp -o hello.o
+  429  vim test_static.cpp 
+  430  g++ test_static.cpp -o hello.o
+  431  vim test_static.cpp 
+  432  ll
+  433  vim test_static.cpp 
+  434  g++ test_static.cpp -o hello.o
+  435  g++ test_static.cpp
+  436  g++ test_static.cpp -o hello.o
+  437  g++ -c test_static.cpp -o hello.o
+  438  ll
+  439  ar -r libhello hello.o 
+  440  g++ test_mainstaic.cpp libhello -L. -o mainstatic
+  441  ./mainstatic 
+  442  ./main
+  443  ll
+  444  ldd main
+  445  ldd mainstatic 
+  446  ll
+  447  history
+  448  man g++
+  449  exit
+  450  ll
+  451  cd forc/
+  452  ll
+  453  history
+  454  history | grep ^g
+  455  history | grep ^g*
+  456  history | xargs grep ^g
+  457  history | xargs grep [^g]*
+  458  history | xargs grep g++
+  459  history | xargs grep 
+  460  history | xargs grep g
+  461  grep g++ | histrory
+  462  grep g++ | history
+  463  history
+  464  history >hislog.txt

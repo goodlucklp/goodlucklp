@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/inputdemo.dir/main.cpp.o CMakeFiles/inputdemo.dir/input_device_manager.cpp.o  -o inputdemo 

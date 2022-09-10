@@ -1,0 +1,3 @@
+/home/lpjsx/forc/1108/build/CMakeFiles/rebuild_cache.dir
+/home/lpjsx/forc/1108/build/CMakeFiles/edit_cache.dir
+/home/lpjsx/forc/1108/build/CMakeFiles/inputdemo.dir

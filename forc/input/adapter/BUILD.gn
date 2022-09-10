@@ -1,0 +1,88 @@
+# Copyright (c) 2021 Huawei Device Co., Ltd.
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+import("//build/ohos.gni")
+import("//drivers/adapter/uhdf2/uhdf.gni")
+import("//drivers/peripheral/hidl_adapter/base/hidl_adapter.gni")
+
+hdi_input_base_path="//drivers/peripheral/hidl_adapter/input"
+
+ohos_shared_library("libinput_adapter") {
+    include_dirs = [
+        "$hdi_input_base_path/include",
+        "//drivers/framework/include/utils",
+        "//drivers/adapter/uhdf2/include/hdi",
+        "//drivers/adapter/uhdf2/osal/include",
+        "//utils/native/base/include",
+        "include",
+        "$hdi_input_base_path/adapter/include",
+        "$hdi_input_base_path/interfaces/include",
+        "$hdi_input_base_path/hal/include",
+        "//foundation/communication/ipc/interfaces/innerkits/ipc_core/include",
+        "//foundation/communication/ipc/ipc/native/src/core/include",
+        "//drivers/framework/core/adapter/syscall/include",
+        "//third_party/libevdev/include/linux/linux",
+        "//drivers/framework/include/osal",
+        "//base/hiviewdfx/hilog_lite/interfaces/native/kits",
+        "//drivers/adapter/uhdf2/ipc/include",
+        # HCS文件解析需要
+        "//drivers/framework/include/config",
+        "//drivers/framework/include/utils",
+        "//drivers/adapter/uhdf2/include/config",
+        "//drivers/framework/ability/config/hcs_parser/include",
+        "//system/core/include/cutils",
+        "$hdf_uhdf_path/manager/include",
+        "$hdf_uhdf_path/include/hdi",
+        "$hdf_framework_path/ability/sbuf/include",
+
+     ]
+
+    sources = [
+        "src/input_device_manager.cpp",
+        "src/input_host_adapter.cpp",
+        "src/input_action_reader.cpp",
+    ]
+
+    deps = [
+        "//utils/native/base:utils",
+        "//drivers/adapter/uhdf2/host:libhdf_host",
+        "//drivers/adapter/uhdf2/ipc:libhdf_ipc_adapter",
+        "//drivers/adapter/uhdf2/osal:libhdf_utils",
+        "$hdf_uhdf_path/hdi:libhdi",
+        "$hdf_uhdf_path/config:libhdf_hcs",
+    ]
+
+    cflags = [
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-Wno-inconsistent-missing-override",
+    ]
+
+    if (is_standard_system) {
+        external_deps = [
+        "hiviewdfx_hilog_native:libhilog",
+        "ipc:ipc_core",
+        ]
+    } else {
+        external_deps = [
+        "hilog:libhilog",
+        "ipc:ipc_core",
+        ]
+    }
+
+    install_images = [ "vendor" ]
+    install_enable = true
+    subsystem_name = "hidl_adapter"
+    part_name = "hidl_adapter"
+}
