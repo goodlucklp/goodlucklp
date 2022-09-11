@@ -3,12 +3,12 @@
 using namespace std;
 int main(int argc, char* argv[]){
     //1.定义和初始化
-    vector<int> vec1;    //默认初始化，vec1为空
-    vector<int> vec2(vec1);  //使用vec1初始化vec2
-    vector<int> vec3(vec1.begin(),vec1.end());//使用vec1初始化vec2
-    vector<int> vec4(10);    //10个值为的元素
-    vector<int> vec5(10,4);  //10个值为的元素
- 
+    vector<int> vec1;                           //默认初始化，vec1为空
+    vector<int> vec2(vec1);                     //使用vec1初始化vec2
+    vector<int> vec3(vec1.begin(),vec1.end());  //使用vec1初始化vec2
+    vector<int> vec4(10);                       //10个值为的元素
+    vector<int> vec5(10,4);                     //10个值为的元素
+
     //2.常用操作方法
     vec1.push_back(100);            //添加元素
     vec1.push_back(101);            //添加元素
@@ -32,7 +32,7 @@ int main(int argc, char* argv[]){
     vector<int>::iterator iter = vec1.begin();    //获取迭代器首地址
     vector<int>::const_iterator c_iter = vec1.begin();   //获取const类型迭代器
     //vec1.clear();                 //清空元素
- 
+
     //3.遍历
     //下标法
     int length = vec1.size();
